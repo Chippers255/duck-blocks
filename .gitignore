@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+# Hide the keys
+*.pem
+
 # Test binary, built with `go test -c`
 *.test
 
