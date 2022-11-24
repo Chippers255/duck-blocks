@@ -13,10 +13,10 @@ import (
 )
 
 type UserAccount struct {
-	State      AccountState   `json:"state"`
-	PrivateKey rsa.PrivateKey `json:"private_key"`
-	PublicKey  rsa.PublicKey  `json:"public_key"`
-	Address    string         `json:"address"`
+	State      AccountState   `json:"state"`       // The current state of the account, usually pulled from the network
+	PrivateKey rsa.PrivateKey `json:"private_key"` // The private part of the RSA key, used for signing transactions
+	PublicKey  rsa.PublicKey  `json:"public_key"`  // The public part of the RSA key, used for verifying transactions
+	Address    string         `json:"address"`     // The address of the user account, calculated from the PublicKey
 }
 
 func NewUserAccount() *UserAccount {

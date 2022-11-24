@@ -41,7 +41,7 @@ func SignTransaction(transactionInstance *DuckatTransaction, PrivateKey *rsa.Pri
 		panic(err)
 	}
 
-	timestamp := time.Now().Format(time.RFC3339)
+	timestamp := time.Now().Unix()
 	signature_string := signature
 
 	transactionInstance.Signature = &DuckatSignature{Value: signature_string, Timestamp: timestamp}

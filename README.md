@@ -1,5 +1,5 @@
 # duck-blocks
-The underlying blockchain to power the Duck Dynasty crypto ecosystem.
+A duck based virtual machine power by duck based digital currency.
 
 
 ## Development
@@ -15,6 +15,9 @@ Clean up packages included in the go module and download any required modules.
 go mod tidy
 go get
 ```
+
+### Linting & Formatting
+
 
 ### Build & Run
 Run from the repository root to compile and run the program.

@@ -9,7 +9,7 @@ type Account interface {
 }
 
 type AccountState struct {
-	Address string `json:"address"` // The public address of the account, for users this will be the public key
+	Address string `json:"address"` // The public address of the account, usually built from a public key
 	Value   int64  `json:"value"`   // The current value of the account in duckatons
 	Code    []byte `json:"code"`    // Empty for users, the compiled code for contracts
 	Data    []byte `json:"data"`    // Constant and variable value states for the account, empty for users

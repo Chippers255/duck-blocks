@@ -67,7 +67,7 @@ func (b *Blockchain) NewBlock(proof string, previousHash string) Block {
 		Timestamp:     time.Now().Unix(),
 		Transactions:  b.CurrentTransactions,
 		PreviousHash:  previousHash,
-		AccountStates: make(map[string]accounts.AccountState),
+		AccountStates: b.CurrentStates,
 	}
 
 	b.CurrentTransactions = nil

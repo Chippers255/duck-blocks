@@ -26,7 +26,7 @@ type DuckatParams struct {
 
 type DuckatSignature struct {
 	Value     []byte `json:"value,omitempty"`     // sdfsdf
-	Timestamp string `json:"timestamp,omitempty"` // dfsfd
+	Timestamp int64  `json:"timestamp,omitempty"` // dfsfd
 }
 
 type DuckatTransaction struct {

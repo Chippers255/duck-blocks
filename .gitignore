@@ -1,12 +1,9 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Hide the keys
+# Sensitive Files
+.env
 *.pem
+
+# Built Executables
+bin/
 
 # Test binary, built with `go test -c`
 *.test
@@ -15,4 +12,4 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
